@@ -22,15 +22,15 @@ Running ...
  ...run scheduler
 VCD info: dumpfile spi_flash.vcd opened for output.
 VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
-../../SPI_FLASH_CONTROLLER/sim/tb_spi_flash.v:43: $finish called at 8150030 (100ps)
+../sim/tb_spi_flash.v:43: $finish called at 11150030 (100ps)
  ...execute Postsim callbacks
 Event counts:
-      131518 time steps (pool=113)
-      403864 thread schedule events
-      197981 assign events
+      179855 time steps (pool=113)
+      301926 thread schedule events
+      270277 assign events
              ...assign(vec4) pool=9362
              ...assign(vec8) pool=204
              ...assign(real) pool=256
              ...assign(word) pool=128
              ...assign(word/r) pool=204
-      529388 other events (pool=4096)
+      557428 other events (pool=4096)
