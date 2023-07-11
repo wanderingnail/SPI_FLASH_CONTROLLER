@@ -48,13 +48,14 @@ initial begin
     #600    cmd_in = {8'h05, 24'h0, 8'h0};   cmd_vld = 1;  //RDSR
     #600    cmd_in = {8'h15, 24'h0, 8'h0};   cmd_vld = 1;  //RDCR
     #600    cmd_in = {8'h06, 24'h0, 8'h0};   cmd_vld = 1;  //WREN
-    #150    cmd_in = {8'h38, 24'h40, 8'hAB}; cmd_vld = 1;  //PP4
+    #150    cmd_in = {8'h38, 24'h40, 8'hA5}; cmd_vld = 1;  //PP4
     #309000 cmd_in = {8'h03, 24'h40, 8'h0};  cmd_vld = 1;  //READ
     #750    cmd_in = {8'hBB, 24'h40, 8'h0};  cmd_vld = 1;  //READ2
     #750    cmd_in = {8'hEB, 24'h40, 8'h0};  cmd_vld = 1;  //READ4
     #750    cmd_in = {8'h77, 24'h40, 8'h0};  cmd_vld = 1;  //BURST
     #750    cmd_in = {8'h20, 24'h40, 8'h0};  cmd_vld = 1;  //SE
 end
+
 
 always @(posedge clk or negedge rst_n) begin
     if (!rst_n) begin
